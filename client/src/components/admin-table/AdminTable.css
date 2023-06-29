@@ -1,0 +1,233 @@
+body {
+  background: #ddd;
+}
+
+.body_container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.content_container {
+  height: 85vh;
+  background: #eaecee;
+  width: 100vw;
+  padding: 1rem;
+}
+.content_container header {
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.content_container .functional_btns {
+  margin-right: 0.5rem;
+  background: #d5d8dc;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: #2471a3;
+}
+
+.content_container .edit_mode {
+  background: #abb2b9;
+}
+
+.content_container .functional_btns.delete {
+  color: #c0392b;
+}
+
+.content_container .functional_btns:hover {
+  background: #abb2b9;
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  color: #2471a3;
+  background-color: #d5d8dc;
+  pointer-events: painted;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #d5d8dc;
+  padding-right: 40px;
+  color: #2471a3;
+}
+.input-search::placeholder {
+  color: #2471a3;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/* MENU LIST */
+
+.menu_btn {
+  background: #d5d8dc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: #2471a3;
+  text-transform: capitalize;
+  position: relative;
+  margin-left: 1rem;
+}
+.menu .done {
+  background: #2471a3;
+  color: #d5d8dc;
+}
+
+.menu_btn:hover {
+  background: #abb2b9;
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+
+.menu_list {
+  position: absolute;
+  margin-top: 0.2rem;
+  list-style-type: none;
+  z-index: 1000;
+  text-transform: capitalize;
+}
+
+.menu_list li {
+  padding: 10px;
+  background: #d5d8dc;
+}
+.menu_list li.last_li {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.menu_list li.first_li {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.menu_list li:hover {
+  background: #abb2b9;
+  transition: all linear 0.3s;
+}
+
+.menu_list li a {
+  padding: 6px;
+  text-decoration: none;
+  display: block;
+  color: #2471a3;
+}
+
+.remove-filter_btn {
+  background: #d5d8dc;
+  margin-left: 1rem;
+  padding: 6px;
+  border-radius: 4px;
+  color: #2471a3;
+  border: none;
+}
+.remove-filter_btn:hover {
+  transition: all linear 0.3s;
+  background: #abb2b9;
+  cursor: pointer;
+}
+
+/* SORT */
+.content_container .sort_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_container .sort_btns button {
+  margin: 0 0.5rem;
+  border: none;
+  background: #d5d8dc;
+  color: #2471a3;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 18px;
+}
+
+.content_container .sort_btns button:hover {
+  background: #abb2b9;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+/* TABLE */
+
+table {
+  background: #d5d8dc;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1rem auto;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #17202a;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #2471a3;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4f5f64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #abb2b9;
+}
+
+.no_results {
+  text-align: center;
+  color: #2471a3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}

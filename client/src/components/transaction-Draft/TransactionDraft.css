@@ -1,0 +1,26 @@
+.details_article {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #15172b;
+  color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.details_article .customer-admin_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.admin_info {
+  margin-right: 2rem;
+}
+.details_article h4 {
+  font-weight: normal;
+}
+
+.transaction_info {
+  padding-bottom: 2rem;
+}

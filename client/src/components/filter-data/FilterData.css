@@ -1,0 +1,132 @@
+.filter_container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  min-height: 250px;
+  max-height: fit-content;
+  width: 50vw;
+  padding: 20px;
+}
+
+.close_btn-container {
+  display: flex;
+  justify-content: end;
+}
+.close_btn-container .delete_filter {
+  font-size: 20px;
+}
+
+.add_filter-btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.add_filter-btn {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.add_filter-btn:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.filter_input-container {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter_input {
+  width: 100%;
+  color: rgb(36, 35, 42);
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: rgb(251, 251, 251);
+  transition: all 0.1s ease 0s;
+  margin-right: 1rem;
+}
+
+.filter_input:focus {
+  border: 2px solid rgb(124, 138, 255);
+}
+
+.submit_filter {
+  padding: 6px 8px;
+  background: #057642;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.filter_data-article {
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
+    inset 4px 4px 8px rgba(209, 217, 230, 0.2),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #e8eff5;
+  border-radius: 6px;
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.delete_filter {
+  margin-left: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #15172b;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+.delete_filter:hover {
+  cursor: pointer;
+}
+
+.filter_input-container .delete_filter {
+  background: red;
+}
+
+.filter_btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter_btn {
+  border: none;
+  background: #0a58ca;
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
